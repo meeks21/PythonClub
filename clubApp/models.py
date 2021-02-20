@@ -22,7 +22,7 @@ class MeetingMin(models.Model):
 
 
     def __str__(self):
-        return self.meetingminutes
+        return self.minutestext
     
     class Meta:
         db_table='meetingminutes'
@@ -51,7 +51,7 @@ class Event(models.Model):
     userid=models.ForeignKey(User, on_delete=models.DO_NOTHING)
 
     def __str__(self):
-        return self.eventname
+        return self.eventtitle
     
     class Meta:
         db_table='event'
